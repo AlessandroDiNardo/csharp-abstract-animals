@@ -8,6 +8,11 @@ namespace csharp_abstract_animals
 {
     internal class Dolphin : Animal, ISwimmer
     {
+        public override void GetName()
+        {
+            Console.WriteLine("Delfino del sium");
+
+        }
         public override void AnimalCall()
         {
             Console.WriteLine("Sciao Belo!");
@@ -20,7 +25,7 @@ namespace csharp_abstract_animals
 
         public void Swim()
         {
-            Console.WriteLine("Sto nuotando");
+            Console.WriteLine("Delfino del sium nuota");
         }
     }
 }

@@ -8,6 +8,11 @@ namespace csharp_abstract_animals
 {
     internal class Sparrow : Animal, IFlying
     {
+        public override void GetName()
+        {
+            Console.WriteLine("Titti");
+
+        }
         public override void Eat()
         {
             Console.WriteLine("Cereals or seeds");
@@ -19,7 +24,7 @@ namespace csharp_abstract_animals
         }
         public void Fly()
         {
-            Console.WriteLine("Sto volando");
+            Console.WriteLine("Titti vola");
         }
     }
 }

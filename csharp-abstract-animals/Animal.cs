@@ -11,5 +11,6 @@ namespace csharp_abstract_animals
         public void Sleep() => Console.WriteLine("Zzzz...");
         public abstract void Eat();
         public abstract void AnimalCall();
+        public abstract void GetName();
     }
 }

@@ -8,6 +8,11 @@ namespace csharp_abstract_animals
 {
     internal class Eagle : Animal, IFlying
     {
+        public override void GetName()
+        {
+            Console.WriteLine("Acquila della Lazio");
+
+        }
         public override void AnimalCall()
         {
             Console.WriteLine("*Scream*");
@@ -20,7 +25,7 @@ namespace csharp_abstract_animals
 
         public void Fly()
         {
-            Console.WriteLine("Sto volando");
+            Console.WriteLine("Acquila della Lazio vola");
         }
     }
 }

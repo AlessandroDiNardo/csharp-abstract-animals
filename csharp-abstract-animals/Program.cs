@@ -13,15 +13,18 @@
 
             foreach (Animal animal in animals)
             {
+                animal.GetName();
                 animal.Eat();
                 animal.AnimalCall();
                 animal.Sleep();
+
+                if (animal is IFlying)
+                    FaiVolare((IFlying)animal);
+                else if (animal is ISwimmer)
+                    FaiNuotare((ISwimmer)animal);
+
                 Console.WriteLine();
             }
-
-            FaiNuotare(dolphin);
-            FaiVolare(eagle);
-            FaiVolare(sparrow);
         }
         public static void FaiVolare(IFlying animale)
         {
