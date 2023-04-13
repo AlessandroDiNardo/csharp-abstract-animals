@@ -5,32 +5,32 @@
         static void Main(string[] args)
         {
             Dog dog = new Dog();
-            Console.WriteLine("Doggo");
-            dog.Eat();
-            dog.AnimalCall();
-            dog.Sleep();
-
             Eagle eagle = new Eagle();
-            Console.WriteLine("\nDaje Lazio");
-            eagle.Eat();
-            eagle.AnimalCall();
-            eagle.Fly();
-            eagle.Sleep();
-
             Dolphin dolphin = new Dolphin();
-            Console.WriteLine("\nDelfino del siuu");
-            dolphin.Eat();
-            dolphin.AnimalCall();
-            dolphin.Swim();
-            dolphin.Sleep();
-
             Sparrow sparrow = new Sparrow();
-            Console.WriteLine("\nTitti");
-            sparrow.Eat();
-            sparrow.AnimalCall();
-            sparrow.Fly();
-            sparrow.Sleep();
 
+            List<Animal> animals = new List<Animal>() { dog, eagle, dolphin, sparrow};
+
+            foreach (Animal animal in animals)
+            {
+                animal.Eat();
+                animal.AnimalCall();
+                animal.Sleep();
+                Console.WriteLine();
+            }
+
+            FaiNuotare(dolphin);
+            FaiVolare(eagle);
+            FaiVolare(sparrow);
+        }
+        public static void FaiVolare(IFlying animale)
+        {
+            animale.Fly();
+        }
+
+        public static void FaiNuotare(ISwimmer animale)
+        {
+            animale.Swim();
         }
     }
 }
