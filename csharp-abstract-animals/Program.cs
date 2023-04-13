@@ -14,18 +14,21 @@
             Console.WriteLine("\nDaje Lazio");
             eagle.Eat();
             eagle.AnimalCall();
+            eagle.Fly();
             eagle.Sleep();
 
             Dolphin dolphin = new Dolphin();
             Console.WriteLine("\nDelfino del siuu");
             dolphin.Eat();
             dolphin.AnimalCall();
+            dolphin.Swim();
             dolphin.Sleep();
 
             Sparrow sparrow = new Sparrow();
             Console.WriteLine("\nTitti");
             sparrow.Eat();
             sparrow.AnimalCall();
+            sparrow.Fly();
             sparrow.Sleep();
 
         }

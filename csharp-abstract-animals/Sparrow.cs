@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
-    internal class Sparrow : Animal
+    internal class Sparrow : Animal, IFlying
     {
         public override void Eat()
         {
@@ -16,6 +16,10 @@ namespace csharp_abstract_animals
         public override void AnimalCall()
         {
             Console.WriteLine("Chip Chip");
+        }
+        public void Fly()
+        {
+            Console.WriteLine("Sto volando");
         }
     }
 }
